@@ -92,7 +92,7 @@ class App extends Component{
   };
   render() {
     const {data, term, filter} = this.state;
-    const visibleData = this.searchEmp(data, term);
+    const visibleData = this.filterPost(this.searchEmp(data, term),filter);
     return (
     <div className="app">
       <AppInfo           
